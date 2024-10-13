@@ -1,0 +1,107 @@
+/*============ GERAL ============*/
+
+body {
+	margin: 0;
+	font-family: 'arial';
+}
+
+.container {
+	/* background: rgb(4, 36, 144); */
+	max-width: 1152px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+/* ----------- CABEÇALHO ------------ */
+
+header {
+	background-color: #24388B;
+	padding: 10px 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+ul.principal {
+	list-style: none;
+	padding: 0;
+	margin: 36px 0 0 0;
+}
+
+li.emLinha {
+	display: inline;
+	margin: 0 16px 0 0;
+}
+
+li.emLinha:last-child {
+	margin: 0;
+}
+
+li.emLinha a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+li.emLinha a:hover {
+	color: cyan;
+	transition: color 0.5s;
+}
+
+li.emLinha a span {
+	/* color: cyan; */
+	font-size: 14px;
+	display: inline-block;
+	transform: rotate(0deg);
+	transition: transform 0.5s;
+}
+
+li.emLinha a:hover span {
+	transform: rotate(-180deg);
+	transition: transform 0.5s;
+}
+
+ul.oculto {
+	display: none;
+}
+
+/* -------------- CORPO DA PAGINA --------------- */
+
+img{
+	display: flex; 
+	justify-content: center; 
+}
+
+.txtImg {
+	margin: 10px, 10px, 10px, 0;
+	font-size: large;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.txtImg img {
+	width: 300px;
+	display: flex;
+	padding: 10px;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+}
+
+h3{
+	text-align: center;
+}
+
+.paragrafo {
+	margin: 10px 40px;
+	display: flex;
+}
+
+footer {
+	text-align: center;
+}

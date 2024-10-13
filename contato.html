@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Yago victor">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="FACULDADE CATÓLICA IMACULADA CONCEIÇÃO - RECIFE">
+                </a>
+            </h1>
+            <nav>
+                <ul> 
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cursos.html">cursos▼</a>
+                        <ul>
+                            <li><a href="si.html">Sistemas para internet</a></li>
+                            <li><a href="ads.html">Análise e desenvolvimeneto de sistemas</a></li>
+                            <li><a href="Enfermagem.html">Enfermagem</a></li>
+                            <li><a href="Direito.html">Direito</a></li>
+                            <li><a href="rh.html">Recursos humanos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <form action="contato.html" method="post">
+                <h2>CONTATO</h2>
+                <hr>
+                <h3>Dados pessoais</h3>
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="insira seu nome" required>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="number" name="telefone" id="telefone" placeholder="(00)00000-0000" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="email@dominio.com.br" required>
+                </p>
+                <p>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" name="senha" id="senha" placeholder="••••••••" required>
+                </p>
+                <hr>
+                <h3>Sexo</h3>
+                <p>
+                    <input type="radio" name="sexo" id="m" value="masculino">
+                    <label for="m">Masculino</label>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="f" value="feminino">
+                    <label for="f">Feminino</label>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="o" value="outro">
+                    <label for="i">Outro</label>
+                </p>
+                <hr>
+                <h3>Áreas de interesse</h3>
+                <p>
+                    <input type="checkbox" name="esportes" id="esportes" value="esportes">
+                    <label for="esportes">Esportes</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="leitura" id="leitura" value="leitura">
+                    <label for="leitura">Leitura</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="cultura" id="cultura" value="cultura">
+                    <label for="cultura">Cultura</label>
+                </p>
+                <hr>
+                <h3>Estado civil</h3>
+                <select name="Estado civil">
+                    <option value="indefinido">selecione</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+                </select>
+                <hr>
+                <h3>
+                    <label for="assunto">Recalmações, Críticas e Sugestões</label>
+                </h3>
+                <textarea id="assunto" placeholder="Digite seu comentário" cols="30" rows="5"></textarea>
+                <hr>
+                <input type="submit" value="Enviar formulário">
+                <input type="reset" value="Limpar formulário">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright - Todos os direitos reservados. ℗™</p>
+    </footer>
+</body>
+</html>
