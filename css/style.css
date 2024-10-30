@@ -8,6 +8,7 @@ body {
 .container {
 	/* background: rgb(4, 36, 144); */
 	max-width: 1152px;
+	margin: 0 auto;
 	display: flex;
 	margin: 0 auto;
 	justify-content: space-between;
@@ -51,7 +52,7 @@ li.emLinha a:hover {
 }
 
 li.emLinha a span {
-	/* color: cyan; */
+	color: cyan;
 	font-size: 14px;
 	display: inline-block;
 	transform: rotate(0deg);
@@ -64,44 +65,83 @@ li.emLinha a:hover span {
 }
 
 ul.oculto {
-	display: none;
+	visibility: hidden;
+	position: absolute;
+	background: #fff;
+	border: solid 1px #000;
+	border-radius: 5px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-left: 60px;
+	transform: translateY(-10px);
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.2s;
 }
 
-/* -------------- CORPO DA PAGINA --------------- */
-
-img{
-	display: flex; 
-	justify-content: center; 
+ul.oculto li {
+	padding: 5px 0;
 }
 
-.txtImg {
-	margin: 10px, 10px, 10px, 0;
-	font-size: large;
-	display: flex;
-	align-items: center;
-	text-align: center;
+ul.oculto a {
+	color: #000;
 }
 
-.txtImg img {
-	width: 300px;
-	display: flex;
-	padding: 10px;
+li.emLinha:hover ul.oculto {
+	visibility: visible;
+	transform: translateY(0);
+	opacity: 1;
+	transition: trnasform 0.5s, opacity 0.2s;
 }
 
-h2 {
-	display: flex;
-	justify-content: center;
+
+/* -------------- SEÇÃO 1 --------------- */
+
+div.blocoFigura {
+	width: 370px;
+	margin: 50px 21px 0 0;
 }
 
-h3{
-	text-align: center;
+div.blocoFigura:last-child {
+	margin: 50px 0 0 0;
 }
 
-.paragrafo {
-	margin: 10px 40px;
-	display: flex;
+div.blocoFigura figure {
+	margin: 0;
 }
 
-footer {
-	text-align: center;
+div.blocoFigura figure img {
+	max-width: 100%;
+}
+
+div.blocoFigura a {
+	text-decoration: none;
+	color: #2593D1;
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+
+/* -------------- SEÇÃO 2 --------------- */
+
+.ms2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.s2m3 {
+	margin: 0 auto;
+	font-size: 36px;
+}
+
+
+/* -------------- SEÇÃO 3 --------------- */
+
+article {
+	width: 565px;
+	margin-right: 22px;
+	text-align: justify;
+}
+
+article:last-child {
+	margin-right: 0;
 }
