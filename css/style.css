@@ -6,7 +6,6 @@ body {
 }
 
 .container {
-	/* background: rgb(4, 36, 144); */
 	max-width: 1152px;
 	margin: 0 auto;
 	display: flex;
@@ -145,3 +144,71 @@ article {
 article:last-child {
 	margin-right: 0;
 }
+
+
+/* -------------- RODAPE ---------------- */
+
+footer {
+	background:#24388B;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+.divRodape {
+	width: 270px;
+	margin-right: 24px;
+}
+
+.divRodape:last-child {
+	margin-right: 0;
+}
+
+.divImagem {
+	text-align: center;
+}
+
+.divImagem img {
+	margin-bottom: 30px;
+}
+
+.divImagem img:last-child {
+	margin-bottom: 0;
+}
+
+.divRodapeImagem {
+	margin-bottom: 36px;
+}
+
+.divRodape p {
+	color: #BDC3DC;
+	margin: 0 0 30  0;
+}
+
+.divRodape p:last-child {
+	margin: 0 0 0 0;
+}
+
+.divRodape p.pLink {
+	font-weight: bold;
+	color: #fff;
+}
+
+.divRodape p.pMargem {
+	margin-bottom: 5px;
+}
+
+.divRodape p:first-child {
+	margin-top: 100px;
+}
+
+.divRodape p.pLink2 {
+	margin-top: 60px;
+}
+
+.divSvg img {
+	margin-right: 15px;
+}
+
+
+/* ----------- INTERNAS ----------- */
+
